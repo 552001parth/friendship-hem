@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Friendship Day Hem ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff9ecf,#ffd6e8);
+text-align:center;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+h1{
+font-size:55px;
+}
+
+h2{
+margin-top:15px;
+font-size:35px;
+}
+
+p{
+margin-top:25px;
+font-size:22px;
+max-width:700px;
+line-height:1.8;
+}
+
+button{
+margin-top:30px;
+padding:15px 35px;
+border:none;
+border-radius:50px;
+font-size:20px;
+background:white;
+color:#ff4081;
+cursor:pointer;
+}
+
+img{
+width:85%;
+max-width:600px;
+border-radius:20px;
+margin-top:40px;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+footer{
+padding:80px 20px;
+font-size:22px;
+}
+
+.heart{
+position:fixed;
+font-size:25px;
+animation:float 8s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-120vh);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>❤️ Happy Friendship Day ❤️</h1>
+
+<h2>Dear Hem ❤️</h2>
+
+<p>
+Two years ago...
+A simple Snapchat "Hi" turned into one of the most beautiful friendships of my life.
+
+Thank you for every smile,
+every laugh,
+and every memory.
+
+You'll always be special to me.
+</p>
+
+<button onclick="document.getElementById('music').play()">
+Play Music ❤️
+</button>
+
+<br>
+
+<img id="photo" src="images/photo1.jpg">
+
+<audio id="music" loop>
+<source src="music/music.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<footer>
+
+<h1>I Love You Hem ❤️</h1>
+
+<p>
+
+Happy Friendship Day ❤️
+
+<br><br>
+
+Maybe we met by chance...
+
+But you'll always have
+
+a special place
+
+in my heart.
+
+<br><br>
+
+Forever & Always ❤️
+
+</p>
+
+</footer>
+
+<script>
+
+let photos=[
+"images/photo1.jpg",
+"images/photo2.jpg",
+"images/photo3.jpg",
+"images/photo4.jpg",
+"images/photo5.jpg",
+"images/photo6.jpg",
+"images/photo7.jpg",
+"images/photo8.jpg",
+"images/photo9.jpg",
+"images/photo10.jpg"
+];
+
+let i=0;
+
+setInterval(()=>{
+
+i=(i+1)%photos.length;
+
+document.getElementById("photo").src=photos[i];
+
+},2500);
+
+setInterval(()=>{
+
+let h=document.createElement("div");
+
+h.innerHTML="❤️";
+
+h.className="heart";
+
+h.style.left=Math.random()*100+"vw";
+
+document.body.appendChild(h);
+
+setTimeout(()=>h.remove(),8000);
+
+},500);
+
+</script>
+
+</body>
+</html>
