@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Happy Friendship Day Hem ❤️</title>
+<title>❤️ Happy Friendship Day Hem ❤️</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
 
@@ -18,189 +17,137 @@ box-sizing:border-box;
 }
 
 body{
-
-font-family:Poppins,sans-serif;
-
-background:linear-gradient(135deg,#ff4d88,#ff7eb3,#ffd1e3);
-
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#ff5ea8,#ff9bc5,#ffd9e8);
 overflow-x:hidden;
-
-color:#fff;
-
+color:#5d2142;
 }
 
-section{
-
-padding:70px 20px;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
+.container{
+width:92%;
+max-width:950px;
+margin:auto;
 }
 
 .card{
-
-width:92%;
-
-max-width:900px;
-
-background:rgba(255,255,255,.88);
-
-backdrop-filter:blur(18px);
-
-border-radius:25px;
-
+margin:40px auto;
+background:rgba(255,255,255,.93);
 padding:35px;
-
-box-shadow:0 15px 40px rgba(0,0,0,.25);
-
+border-radius:25px;
+box-shadow:0 12px 30px rgba(0,0,0,.18);
 text-align:center;
-
-color:#5c2142;
-
-margin:25px auto;
-
 }
 
-h1{
-
-font-family:"Dancing Script",cursive;
-
-font-size:62px;
-
+.title{
+font-family:'Great Vibes',cursive;
+font-size:65px;
 color:#ff2d75;
-
-margin-bottom:20px;
-
+margin-bottom:10px;
 }
 
-h2{
-
-font-size:34px;
-
+.subtitle{
+font-size:32px;
+font-weight:600;
 margin-bottom:20px;
-
+color:#6b2145;
 }
 
-p{
-
+.text{
 font-size:20px;
-
 line-height:1.9;
-
+color:#5d2142;
 }
 
-button{
-
+.gallery{
 margin-top:30px;
-
-padding:16px 35px;
-
-border:none;
-
-border-radius:50px;
-
-font-size:18px;
-
-background:#ff2d75;
-
-color:#fff;
-
-cursor:pointer;
-
-transition:.3s;
-
-}
-
-button:hover{
-
-transform:scale(1.08);
-
-}
-
-.slider{
-
-margin-top:30px;
-
-}
-
-.slider img{
-
-width:100%;
-
-max-height:75vh;
-
-height:auto;
-
-object-fit:contain;
-
-background:white;
-
-padding:8px;
-
+background:#fff;
+padding:10px;
 border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
 
-box-shadow:0 12px 25px rgba(0,0,0,.25);
+.gallery img{
+width:100%;
+height:520px;
+object-fit:contain;
+background:white;
+border-radius:15px;
+}
 
+.btn{
+margin-top:25px;
+padding:15px 35px;
+border:none;
+border-radius:40px;
+background:#ff2d75;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.love{
+font-family:'Great Vibes',cursive;
+font-size:52px;
+color:#ff2d75;
+margin-bottom:20px;
+}
+
+.message{
+font-size:20px;
+line-height:2;
+color:#5d2142;
 }
 
 .heart{
-
 position:fixed;
-
-font-size:25px;
-
+top:-50px;
+font-size:24px;
+animation:fall linear infinite;
 pointer-events:none;
-
-animation:float 8s linear infinite;
-
 }
 
-@keyframes float{
+@keyframes fall{
 
 0%{
-
-transform:translateY(100vh);
-
+transform:translateY(-100px);
 opacity:0;
-
 }
 
 100%{
-
-transform:translateY(-120vh);
-
+transform:translateY(110vh);
 opacity:1;
-
 }
 
 }
 
-.fade{
-
-animation:fade 2s;
-
+footer{
+padding:50px;
+text-align:center;
+color:white;
+font-size:20px;
 }
 
-@keyframes fade{
+@media(max-width:768px){
 
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
+.title{
+font-size:45px;
 }
 
-to{
+.subtitle{
+font-size:25px;
+}
 
-opacity:1;
+.gallery img{
+height:320px;
+}
 
-transform:translateY(0);
-
+.message,.text{
+font-size:17px;
 }
 
 }
@@ -208,24 +155,25 @@ transform:translateY(0);
 </style>
 
 </head>
-
 <body>
 
-<section>
+<div class="container">
 
-<div class="card fade">
+<div class="card">
 
-<h1>❤️ Happy Friendship Day ❤️</h1>
+<h1 class="title">❤️ Happy Friendship Day ❤️</h1>
 
-<h2>Dear Hem ❤️</h2>
+<h2 class="subtitle">Dear Hem ❤️</h2>
 
-<p>
+<p class="text">
 
 Two years ago...
 
 A simple Snapchat "Hi"
 
-became one of the most beautiful friendships of my life.
+became one of the most beautiful friendships
+
+of my life.
 
 I never imagined
 
@@ -235,21 +183,21 @@ would become
 
 my favourite notification.
 
+Thank you for every smile,
+
+every laugh,
+
+every late night chat,
+
+and every beautiful memory.
+
 </p>
 
-<button onclick="playMusic()">
+<button class="btn" onclick="playMusic()">
 
 🎵 Play Music
 
 </button>
-
-<div class="slider">
-
-<img id="slide"
-
-src="photo1.jpeg">
-
-</div>
 
 <audio id="music" loop>
 
@@ -257,110 +205,126 @@ src="photo1.jpeg">
 
 </audio>
 
+<div class="gallery">
+
+<img id="photo" src="photo1.jpeg" alt="Hem">
+
 </div>
 
-</section>
-<section>
+</div>
 
-<div class="card fade">
+<div class="card">
 
-<h1>📸 Our Beautiful Memories ❤️</h1>
+<h2 class="love">💖 Our Story 💖</h2>
 
-<p>
+<p class="message">
 
-Every picture has a story...
+📱 Snapchat...
 
-Every smile is priceless...
+↓
 
-Every memory is forever.
+😊 First Hi...
 
-Thank you for making my life happier.
+↓
+
+😂 Daily Chats...
+
+↓
+
+📸 Beautiful Memories...
+
+↓
+
+❤️ Today...
+
+You're one of
+
+the most special people
+
+in my life.
+
+Thank you
+
+for always being there.
 
 </p>
 
-<div class="slider">
-
-<img id="memory" src="photo2.jpeg">
-
 </div>
 
-</div>
+<div class="card">
 
-</section>
+<h2 class="love">💌 A Small Message</h2>
 
-<section>
-
-<div class="card fade">
-
-<h1>💌 A Message For You</h1>
-
-<p>
+<p class="message">
 
 Dear Hem,
 
-I just want to say...
+Life gave me many people,
 
-Thank You ❤️
+but very few became
 
-Thank you for every smile.
+a beautiful memory.
 
-Thank you for every laugh.
+You are one of them.
 
-Thank you for every late night chat.
+No matter
 
-Thank you for staying.
+where life takes us,
 
-Thank you for understanding me.
+our friendship
 
-You are not just my best friend...
+will always remain
 
-You are one of the best things
-
-that ever happened in my life.
-
-No matter how busy life becomes...
-
-No matter how many years pass...
-
-You'll always have
-
-a special place in my heart. ❤️
-
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="card fade">
-
-<h1>❤️ I Love You Hem ❤️</h1>
-
-<p>
-
-Happy Friendship Day ❤️
-
-Forever & Always ♾️
-
-Stay Happy...
-
-Keep Smiling...
-
-And Never Change.
+special.
 
 ❤️
 
-Made With Love By
+</p>
 
-Parth
+</div>
+<div class="card">
+
+<h2 class="love">❤️ I Love You Hem ❤️</h2>
+
+<p class="message">
+
+Happy Friendship Day ❤️
+
+Thank you for always being there.
+
+Maybe we met by chance...
+
+But becoming friends
+
+was one of the best things
+
+that ever happened to me.
+
+Every picture reminds me
+
+how lucky I am
+
+to have a friend like you.
+
+Stay Happy.
+
+Keep Smiling.
+
+Forever & Always ❤️
+
+Made with ❤️ by Parth
 
 </p>
 
 </div>
 
-</section>
+<footer>
+
+❤️ Happy Friendship Day Hem ❤️
+
+</footer>
+
+</div>
 
 <script>
 
@@ -377,48 +341,49 @@ const photos=[
 "photo10.jpeg"
 ];
 
-let i=0;
+let current=0;
 
-function playMusic(){
+setInterval(function(){
 
-document.getElementById("music").play();
+current=(current+1)%photos.length;
 
-}
-
-setInterval(()=>{
-
-i=(i+1)%photos.length;
-
-document.getElementById("slide").src=photos[i];
-
-document.getElementById("memory").src=photos[i];
+document.getElementById("photo").src=photos[current];
 
 },2500);
 
-setInterval(()=>{
+function playMusic(){
 
-let h=document.createElement("div");
+const music=document.getElementById("music");
 
-h.innerHTML="❤️";
+music.play().catch(()=>{
 
-h.className="heart";
+alert("Tap the Play Music button once to start the music.");
 
-h.style.left=Math.random()*100+"vw";
+});
 
-h.style.fontSize=(20+Math.random()*20)+"px";
+}
 
-document.body.appendChild(h);
+function createHeart(){
 
-setTimeout(()=>{
+const heart=document.createElement("div");
 
-h.remove();
+heart.className="heart";
 
-},8000);
+heart.innerHTML="❤️";
 
-},300);
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(4+Math.random()*4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),8000);
+
+}
+
+setInterval(createHeart,350);
 
 </script>
 
 </body>
-
 </html>
